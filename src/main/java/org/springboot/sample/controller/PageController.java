@@ -8,7 +8,12 @@ public class PageController {
 
     @RequestMapping(value = "/page/index")
     public String index(){
-        return "进去拦截器的controller";
+        return "index方法的进去拦截器的controller";
+    }
+
+    @RequestMapping(value = "/login")
+    public String login(){
+        return "login方法的进去拦截器的controller";
     }
 
 }
